@@ -95,14 +95,11 @@ public:
         return amount_of_elems;
     }
     void coutTable(){
-        int count = 0;
         for (int i = 0; i < capacity; i++) {
             if (table[i] != nullptr && table[i]->phone_number != -1){
-                //cout << "Phone number is " << table[i]->phone_number << ", address is " << table[i]->adress << endl;
-                count++;
+                cout << "Phone number is " << table[i]->phone_number << ", address is " << table[i]->adress << endl;
             }
         }
-        cout << count << endl;
     }
 };
 
@@ -113,14 +110,12 @@ int main(){
     for (int k = 0; k < 100; k++){
         long temp;
         auto* table = new HashMap;
-        vector<long> numbers;
         for (int i = 0; i < 7; i++){
             string phone_number = "9";
             for (int j = 0; j < 9; j++){
                 phone_number += to_string(dist(gen));
             }
             long number = stol(phone_number);
-            numbers.push_back(number);
             temp = number;
             table->insertNode(number, "moscow");
         }
