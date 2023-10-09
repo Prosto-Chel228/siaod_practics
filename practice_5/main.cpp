@@ -107,7 +107,7 @@ int main() {
     simmetric(root);
 
     cout << "\nПосле удаления moscow\n";
-    root = deleteNode(root, "mosco");
+    root = deleteNode(root, "moscow");
 
     cout << "Прямой обход: ";
     straight(root);
