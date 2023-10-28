@@ -42,8 +42,7 @@ public:
             cout << "Source vertice: " << source_vertice  << "; ";
             vector<pair<string, string>> temp = connected_vertices_with_weights;
             for (int i = 0; i < temp.size(); i++) {
-                cout << "(input vertice: " << temp[i].first << ", weight: "
-                     << temp[i].second << ")";
+                cout << "(input vertice: " << temp[i].first << ", weight: " << temp[i].second << ")";
                 if (i != temp.size()-1) {
                     cout << ", ";
                 }
